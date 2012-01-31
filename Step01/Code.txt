@@ -1,0 +1,8 @@
+﻿var post = Post
+	.Title("8 steps for writing a fluent API")
+	.Body("<html>...</html>")
+	.Author()
+		.Name("John Doe")
+		.Email("johndoe@email.com")
+		.Twitter("@johndoe")
+	.Tags("Fluent API, Internal DSL");

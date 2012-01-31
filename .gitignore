@@ -1,0 +1,7 @@
+
+*.user
+*.suo
+/_ReSharper.StepsToFluentAPI
+/bin
+/obj
+/packages/NUnit.2.5.10.11092
