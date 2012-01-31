@@ -1,20 +1,19 @@
-﻿namespace StepsToFluentAPI.Step02
+﻿using NUnit.Framework;
+
+namespace StepsToFluentAPI.Step2to5
 {
-    using System;
-
-    using NUnit.Framework;
-
     public class Tests
     {
+        [TestCase]
         public void ConfiguringPostWithoutAuthor()
         {
             var expected = new BlogPost();
-            expected.Title = "8 steps for writing a fluent API";
+            expected.Title = "How to build a basic fluent interface in 8 steps";
             expected.Body = "<html>...</html>";
             expected.Tags = "Fluent API, Internal DSL";
 
             var post = Post
-                .Title("8 steps for writing a fluent API")
+                .Title("How to build a basic fluent interface in 8 steps")
                 .Body("<html>...</html>")
                 .Tags("Fluent API, Internal DSL");
             BlogPost actual = post.Build();

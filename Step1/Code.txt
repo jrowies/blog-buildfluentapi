@@ -1,5 +1,5 @@
 ﻿var post = Post
-	.Title("8 steps for writing a fluent API")
+	.Title("How to build a basic fluent interface in 8 steps")
 	.Body("<html>...</html>")
 	.Author()
 		.Name("John Doe")
